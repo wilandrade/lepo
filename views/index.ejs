@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>Lepo: Amplify your social outreach</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body{ 
+            padding-top:80px;
+            background-color: #212121;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span class="fa"></span> Lepo</h1>
+    <form action="/logout" method="get">
+        <button type="submit" class="btn btn-caution btn-lg">Logout</button>
+    </form>
+    <div class="col-sm-6 col-sm-offset-3">
+        <h1><span class="fa fa-comment"></span> What's on your mind?</h1>
+        <!-- Signup FORM -->
+        <form action="/send" method="post">
+            <div class="form-group">
+                <textarea class="form-control" rows="3" name="msg"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg">Send</button>
+        </form> <br>
+        <form action="/toggleTwitterLink" method="get">
+            <button type="submit" class="btn btn-info btn-sm">Link Twitter</button>
+        </form>
+        <form action="/toggleGoogleLink" method="get">
+            <button type="submit" class="btn btn-danger btn-sm">Link Google</button>
+        </form>
+        <form action="/toggleFacebookLink" method="get">
+            <button type="submit" class="btn btn-primary btn-sm">Link Facebook</button>
+        </form>
+    </div>
+</body>
+</html>
